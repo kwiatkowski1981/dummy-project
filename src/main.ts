@@ -5,6 +5,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
     app.setGlobalPrefix('api');
     app.enableCors({ origin: 'https://suchesponsoren.ch' });
-  await app.listen(3000);
+  await app.listen(443);
 }
 bootstrap();
